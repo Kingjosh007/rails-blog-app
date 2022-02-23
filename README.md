@@ -24,8 +24,8 @@ The app is built to match the following Entity Relationship Diagram:
 
 The project is divided in eleven (11) milestones and one exercise. Check the corresponding branch. The current milestone is **bolded**.
 
-- **Milestone 1: Setup and controllers**
-- Milestone 2: Controllers specs
+- Milestone 1: Setup and controllers
+- **Milestone 2: Controllers specs**
 - Milestone 3: Creating a data model
 - Milestone 4: Processing in data models
 - Milestone 5: Views
