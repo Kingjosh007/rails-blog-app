@@ -16,6 +16,7 @@
 - Comment posts
 
 The app is built to match the following Entity Relationship Diagram:
+
 ![Blog App ERD](images/blog_app_erd.png)
 
 
@@ -23,7 +24,7 @@ The app is built to match the following Entity Relationship Diagram:
 
 The project is divided in eleven (11) milestones and one exercise. Check the corresponding branch. The current milestone is **bolded**.
 
-**- Milestone 1: Setup and controllers**
+- **Milestone 1: Setup and controllers**
 - Milestone 2: Controllers specs
 - Milestone 3: Creating a data model
 - Milestone 4: Processing in data models
@@ -65,24 +66,23 @@ To get a local copy up and running follow these simple example steps.
 
 ### Testing
 
-  * Run gem install rspec to install Rspec,
-  * Run rspec spec to run all the test cases, and
-  * Run rspec spec/name_of_test_file.rb to run test cases individually.
+  * Run `gem install rspec` to install Rspec,
+  * Run `rspec spec` to run all the test cases, and
+  * Run `rspec spec/name_of_test_file.rb` to run test cases individually.
 
 
 ## Built With
 
-![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) &nbsp; &nbsp; ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) &nbsp; &nbsp; ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) &nbsp; &nbsp; ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  &nbsp; &nbsp; ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) &nbsp; &nbsp; ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) &nbsp; &nbsp; ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) &nbsp; &nbsp; ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp; &nbsp; ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
 
 ## Author
 
 👤 **King Josaphat Chewa (KJC)**
 
-- GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
-- Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/king-josaphat-chewa/)
-- AngelList: [Kingjosh007](https://angel.co/u/Kingjosh007)
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) &nbsp; &nbsp; [@Kingjosh007](https://github.com/Kingjosh007)
+- ![Twitter](https://img.shields.io/badge/<KingJoChewa>-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white) &nbsp; &nbsp; [@KingJoChewa](https://twitter.com/KingJoChewa)
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white) &nbsp; &nbsp; [King Josaphat Chewa](https://www.linkedin.com/in/king-josaphat-chewa/)
+- ![AngelList](https://img.shields.io/badge/AngelList-%23D4D4D4.svg?style=for-the-badge&logo=AngelList&logoColor=black) &nbsp; &nbsp; [Kingjosh007](https://angel.co/u/Kingjosh007)
 
 
 ## 🤝 Contributing
