@@ -26,8 +26,8 @@ The project is divided in eleven (11) milestones and one exercise. Check the cor
 
 - Milestone 1: Setup and controllers
 - Milestone 2: Controllers specs
-- **Milestone 3: Creating a data model**
-- Milestone 4: Processing in data models
+- Milestone 3: Creating a data model
+- **Milestone 4: Processing data in models**
 - Milestone 5: Views
 - Milestone 6: Forms
 - Milestone 7: Validations, Model specs, and n+1 problems
