@@ -1,6 +1,6 @@
 <section>
   <div class="display mt-5">
-    <img src=<%= user_img(user) %> alt="Image showing <%= user.name %>" class="border border-3 border-dark">
+    <%= image_tag user_img(user), :class => "border border-3 border-dark" %>
     <div class="user_list border border-3 border-dark d-flex justify-content-between py-5">
       <h2 class="user_name"><%= user.name %></h2>
       <p class="num_post flex-row-reverse fs-6">Number of posts: <%= user.posts.size %></p>
