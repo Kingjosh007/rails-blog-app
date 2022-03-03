@@ -8,8 +8,8 @@ class PostsController < ApplicationController
   def show
     user_id = params[:user_id]
     id = params[:id]
-    @user = User.find(@user_id)
-    @post = Post.find(@id)
+    @user = User.find(user_id)
+    @post = Post.find(id)
     @comments = @post.comments.order(created_at: :desc)
     @likes = @post.likes.all
   end
