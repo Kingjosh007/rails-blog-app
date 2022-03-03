@@ -1,1 +1,7 @@
-<h1>Here is list of all users and their number of posts.</h1>
+<div>
+  <% @users.each do |user| %>
+    <%= link_to user_path(user.id) do %>
+      <%= render partial: "user_profile", locals: {user: user} %>
+    <% end %>
+  <% end %>
+</div>
