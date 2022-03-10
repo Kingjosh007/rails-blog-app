@@ -1,4 +1,9 @@
 <div>
+ <nav class="fs-6 p-3 container mt-2 p-2 bio">
+    <%= link_to "Add a post", new_user_post_path(@user.id) %>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Back", :back %>
+  </nav>
   <%= render partial: "users/user_profile", locals: { user: @user } %>
     <ul>
       <% @posts.each do |p| %>
