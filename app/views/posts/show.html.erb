@@ -11,12 +11,15 @@
       </div>
         <p><%= @post.text %> </p>
     </div>
+
     <ul class="border border-2 border-dark container p-2 my-5 bio">
       <% @post.comments.each do |c| %>
         <li><%= c.user.name %>: <%= c.text%></li>
       <% end %>
     </ul>
 
+    <%= render partial: "likes/create" %>
     <%= render partial: "comments/create" %>
+    
 
 </div>

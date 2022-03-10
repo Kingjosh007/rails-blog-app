@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   respond_to do |format|
       format.html do
         if new_post.save
-          redirect_to user_post_path(new_post.author_id, new_post.id), notice: 'Post created successfully'
+          redirect_to user_post_path(new_post.user_id, new_post.id), notice: 'Post created successfully'
         else
           render :new, alert: 'An error occured. Please try again!'
         end
