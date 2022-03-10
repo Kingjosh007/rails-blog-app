@@ -14,7 +14,6 @@ class PostsController < ApplicationController
     @likes = @post.likes.all
   end
 
-  
   def new
     @current = current_user
   end
@@ -22,7 +21,7 @@ class PostsController < ApplicationController
   def create
     new_post = current_user.posts.build(post_params)
 
-  respond_to do |format|
+    respond_to do |format|
       format.html do
         if new_post.save
           redirect_to user_post_path(new_post.user_id, new_post.id), notice: 'Post created successfully'
