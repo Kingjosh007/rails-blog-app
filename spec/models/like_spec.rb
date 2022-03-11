@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  describe "Validations" do
-    subject { Like.new( user_id: 3, post_id: 4) }
+  describe 'Validations' do
+    subject { Like.new(user_id: 3, post_id: 4) }
 
     before { subject.save }
 
-  it 'User id should be an integer' do
+    it 'User id should be an integer' do
       subject.user_id = 'z'
       expect(subject).to_not be_valid
     end
@@ -16,5 +16,4 @@ RSpec.describe Like, type: :model do
       expect(subject).to_not be_valid
     end
   end
-
 end
