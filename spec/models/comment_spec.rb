@@ -6,17 +6,17 @@ RSpec.describe Comment, type: :model do
 
     before { subject.save }
 
-    it 'title should not be valid' do
+    it 'Title should not be valid' do
       subject.text = nil
       expect(subject).to_not be_valid
     end
 
-    it 'author id should be a number' do
+    it 'Author id should be a number' do
       subject.user_id = 'a'
       expect(subject).to_not be_valid
     end
 
-    it 'post id should be a number' do
+    it 'Post id should be a number' do
       subject.post_id = 'look'
       expect(subject).to_not be_valid
     end

@@ -6,12 +6,12 @@ RSpec.describe Like, type: :model do
 
     before { subject.save }
 
-  it 'user id should be an integer' do
+  it 'User id should be an integer' do
       subject.user_id = 'z'
       expect(subject).to_not be_valid
     end
 
-    it 'post id should be an integer' do
+    it 'Uost id should be an integer' do
       subject.post_id = 'y'
       expect(subject).to_not be_valid
     end
