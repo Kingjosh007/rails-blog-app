@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   describe "Validations" do
-    subject { Comment.new(text: 'This is test case', user_id: 2, post_id: 3) }
+    subject { Comment.new(text: 'This is just a test', user_id: 2, post_id: 3) }
 
     before { subject.save }
 
