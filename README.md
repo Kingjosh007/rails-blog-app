@@ -61,7 +61,7 @@ To get a local copy up and running follow these simple example steps.
 ### Running the app
 
   *  Run rake `db:create:all` and `rake db:migrate`
-  *  Run `rails rake db:seed` to populate the database with some sample data.
+  *  Run `rake db:seed` to populate the database with some sample data.
   *  Run `rails s` to start the server.
   *  In your browser, go to `http://localhost:3000`.
 
