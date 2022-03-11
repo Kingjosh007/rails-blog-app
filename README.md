@@ -29,8 +29,8 @@ The project is divided in eleven (11) milestones and one exercise. Check the cor
 - Milestone 3: Creating a data model
 - Milestone 4: Processing data in models
 - Milestone 5: Views
-- **Milestone 6: Forms**
-- Milestone 7: Validations, Model specs, and n+1 problems
+- Milestone 6: Forms
+- **Milestone 7: Validations, Model specs, and n+1 problems**
 - Milestone 8: Add Devise
 - Milestone 9: Add authorization rules
 - Milestone 10: Integration specs for views
@@ -61,6 +61,7 @@ To get a local copy up and running follow these simple example steps.
 ### Running the app
 
   *  Run rake `db:create:all` and `rake db:migrate`
+  *  Run `rake db:seed` to populate the database with some sample data.
   *  Run `rails s` to start the server.
   *  In your browser, go to `http://localhost:3000`.
 
