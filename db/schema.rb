@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_17_212021) do
+ActiveRecord::Schema.define(version: 2022_03_18_120554) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
     t.text "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
     t.bigint "post_id", null: false
     t.index ["post_id"], name: "index_comments_on_post_id"
@@ -25,8 +26,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_17_212021) do
   end
 
   create_table "likes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.bigint "post_id", null: false
     t.bigint "user_id", null: false
     t.index ["post_id"], name: "index_likes_on_post_id"
@@ -36,10 +37,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_17_212021) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "text"
-    t.integer "comments_counter"
-    t.integer "likes_counter"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "comments_counter", default: 0
+    t.integer "likes_counter", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
@@ -48,9 +49,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_17_212021) do
     t.string "name"
     t.string "photo"
     t.text "bio"
-    t.integer "posts_counter"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "posts_counter", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -60,6 +61,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_17_212021) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string "unconfirmed_email"
+    t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 

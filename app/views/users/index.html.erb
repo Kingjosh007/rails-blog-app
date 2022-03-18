@@ -1,7 +1,9 @@
 <div>
  <ul class="nav justify-content-center bg-light text-white">
   <li class="nav-item">
-    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link'  %>
+    <%= link_to(destroy_user_session_path, {:class => "nav-link", :method => :delete}) do  %>
+      <span class="sidebar-normal"> Logout </span>
+    <% end %> 
   </li>
   <li class="nav-item">
    <%= link_to "Settings", edit_user_registration_path, class: 'nav-link' %>
