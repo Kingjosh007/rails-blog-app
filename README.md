@@ -31,9 +31,9 @@ The project is divided in eleven (11) milestones and one exercise. Check the cor
 - Milestone 5: Views
 - Milestone 6: Forms
 - Milestone 7: Validations, Model specs, and n+1 problems
-- **Milestone 8: Add Devise**
+- Milestone 8: Add Devise
 - Milestone 9: Add authorization rules
-- Milestone 10: Integration specs for views
+- **Milestone 10: Integration specs for views**
 - Milestone 11: Add API endpoints
 - Exercise: API documentation
 
